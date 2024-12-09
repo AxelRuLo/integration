@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { InventoryModule } from './inventory/app.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { ConfigModule } from '@nestjs/config';
       // TODO: only for development
       synchronize: true,
     }),
+    InventoryModule
   ],
 })
 export class AppModule { }

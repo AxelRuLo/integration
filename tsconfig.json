@@ -12,6 +12,9 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
+    "paths": {
+      "@srcInventory/*": ["src/inventory/*"],
+    },
     "strictNullChecks": false,
     "noImplicitAny": false,
     "strictBindCallApply": false,
