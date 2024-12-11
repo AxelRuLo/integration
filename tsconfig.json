@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "paths": {
       "@srcInventory/*": ["src/inventory/*"],
+      "@auth/*": ["src/auth/*"],
     },
     "strictNullChecks": false,
     "noImplicitAny": false,

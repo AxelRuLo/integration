@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { InventoryModule } from './inventory/app.module';
+import { GeneralAuthModule } from '@auth/app.module';
 
 @Module({
   imports: [
@@ -20,7 +21,8 @@ import { InventoryModule } from './inventory/app.module';
       // TODO: only for development
       synchronize: true,
     }),
-    InventoryModule
+    InventoryModule,
+    GeneralAuthModule,
   ],
 })
-export class AppModule { }
+export class AppModule {}

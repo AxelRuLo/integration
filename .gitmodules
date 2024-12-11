@@ -1,3 +1,6 @@
 [submodule "src/inventory"]
 	path = src/inventory
 	url = git@github.com:AxelRuLo/inventory.git
+[submodule "src/auth"]
+	path = src/auth
+	url = git@github.com:AxelRuLo/auth.git
